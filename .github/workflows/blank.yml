@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Change permission
-        uses: chmod +x entrypoint.sh
+        run: chmod +x entrypoint.sh
       - name: Hello world action step
         uses: ./ # Uses an action in the root directory
         id: hello
